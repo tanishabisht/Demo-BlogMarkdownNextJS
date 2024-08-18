@@ -16,6 +16,23 @@ export default function RootLayout({ children }) {
       <Header />
       {children}
       </body>
+
+
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+      <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if (typeof window !== 'undefined') {
+                // Add your script logic here
+                window.addEventListener('load', function() {
+                  if (window.location.pathname === '/') {
+                    window.location.href = '/admin';
+                  }
+                });
+              }
+            `,
+          }}
+        />
     </html>
   );
 }
