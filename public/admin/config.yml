@@ -13,4 +13,4 @@ collections:
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Excerpt", name: "excerpt", widget: "string" }
       - { label: "Cover Image", name: "cover_image", widget: "image" }
-      - { label: "Content", name: "content", widget: "markdown" }
+      - { label: "Body", name: "body", widget: "markdown" }
