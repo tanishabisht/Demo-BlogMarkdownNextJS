@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
 
 
       <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-      <script
+      {/* <script
           dangerouslySetInnerHTML={{
             __html: `
               if (typeof window !== 'undefined') {
@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
               }
             `,
           }}
-        />
+        /> */}
     </html>
   );
 }
