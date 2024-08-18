@@ -37,7 +37,7 @@ export default async function Home() {
         <title>Dev Blog</title>
       </Head>
 
-      <div className='posts'>
+      <div className='card-grid'>
         {posts.map((post, index) => (
           <Post key={index} post={post} />
         ))}

@@ -2,7 +2,7 @@
 title: 'Microservices Architecture Basics'
 date: 'August 15, 2023'
 excerpt: 'Explore the core principles of microservices architecture, including scalability, resilience, and service decomposition for building robust systems.'
-cover_image: '/images/posts/img3.jpg'
+cover_image: '/images/img1.jpg'
 ---
 
 Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat
@@ -17,6 +17,8 @@ in.
 3. Inquam rector Icarus possum vim tumulo propiusque
 4. Vulnus se Latreus
 5. Aptumque bis
+
+<img src='/images/img1.jpg' alt="post" />
 
 ## Turpius Aegides membris colat volentes fallere
 

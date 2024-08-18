@@ -2,7 +2,6 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { marked } from 'marked'; 
-import Link from 'next/link';
 
 async function fetchPostData(slug) {
   const filePath = path.join(process.cwd(), 'posts', `${slug}.md`);
@@ -21,14 +20,10 @@ export default async function PostPage({ params }) {
 
   return (
     <>
-      <Link href="/" legacyBehavior>
-        <a className="btn btn-back">Go Back</a>
-      </Link>
       <div className="card card-page">
-        <h1 className="post-title">{frontmatter.title}</h1>
-        <div className="post-date">Posted on {frontmatter.date}</div>
-        <img src={frontmatter.cover_image} alt="" />
-        <div className="post-body">
+        <h1 className="markdown-title">{frontmatter.title}</h1>
+        <div className="markdown-date">Posted on {frontmatter.date}</div>
+        <div className="markdown-body">
           <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
         </div>
       </div>
